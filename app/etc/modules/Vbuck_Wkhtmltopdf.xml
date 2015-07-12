@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+
+/**
+ * wkhtmltopdf interface module declaration.
+ *
+ * PHP Version 5
+ *
+ * @package   Vbuck_Wkhtmltopdf
+ * @author    Rick Buczynski <me@rickbuczynski.com>
+ * @copyright 2015 Rick Buczynski
+ */
+
+-->
+<config>
+    <modules>
+        <Vbuck_Wkhtmltopdf>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Vbuck_Wkhtmltopdf>
+    </modules>
+</config>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!--
+
+/**
+ * System design enhancements module configuration.
+ *
+ * PHP Version 5
+ *
+ * @package   Vbuck_Wkhtmltopdf
+ * @author    Rick Buczynski <me@rickbuczynski.com>
+ * @copyright 2015 Rick Buczynski
+ */
+
+-->
+<config>
+    <modules>
+        <Vbuck_Wkhtmltopdf>
+            <version>0.0.1</version>
+        </Vbuck_Wkhtmltopdf>
+    </modules>
+    <default>
+        <pdf>
+            <adapter>
+                <encoding></encoding>
+                <footer_font><![CDATA[Helvetica Regular]]></footer_font>
+                <footer_font_size>12</footer_font_size>
+                <header_font><![CDATA[Helvetica Regular]]></header_font>
+                <header_font_size>12</header_font_size>
+                <image_dpi>600</image_dpi>
+                <javascript_delay>200</javascript_delay>
+                <margin_bottom></margin_bottom>
+                <margin_left>10mm</margin_left>
+                <margin_right>10mm</margin_right>
+                <margin_top></margin_top>
+                <page_size>A4</page_size>
+                <pdf_storage>media/pdf</pdf_storage>
+                <orientation>Portrait</orientation>
+                <outline_depth>4</outline_depth>
+                <smart_shrinking>1</smart_shrinking>
+                <toc_back_links>0</toc_back_links>
+                <toc_header_text><![CDATA[Table of Contents]]></toc_header_text>
+                <toc_level_indentation>1em</toc_level_indentation>
+                <toc_links>1</toc_links>
+                <toc_text_size_factor>0.8</toc_text_size_factor>
+                <zoom>0.8</zoom>
+                <use_toc>0</use_toc>
+                <viewport_size>1366x768</viewport_size>
+            </adapter>
+            <service>
+                <path>wkhtmltopdf</path>
+                <tmp>/tmp</tmp>
+            </service>
+        </pdf>
+    </default>
+    <global>
+        <models>
+            <pdf>
+                <class>Vbuck_Wkhtmltopdf_Model</class>
+            </pdf>
+        </models>
+        <pdf>
+            <page_sizes>
+                <A0 />
+                <A1 />
+                <A3 />
+                <A4 />
+                <A5 />
+                <A6 />
+                <A7 />
+                <A8 />
+                <A9 />
+                <B0 />
+                <B1 />
+                <B2 />
+                <B3 />
+                <B4 />
+                <B5 />
+                <B6 />
+                <B7 />
+                <B8 />
+                <B9 />
+                <B10 />
+                <C5E />
+                <Comm10E />
+                <Custom />
+                <DLE />
+                <Executive />
+                <Folio />
+                <Ledger />
+                <Legal />
+                <Letter />
+                <Tabloid />
+            </page_sizes>
+            <orientations>
+                <Landscape />
+                <Portrait />
+            </orientations>
+            <fonts>
+                <courier value="Courier Regular" />
+                <courier_oblique value="Courier Oblique" />
+                <courier_bold value="Courier Bold" />
+                <courier_bold_oblique value="Courier Bold Oblique" />
+                <helvetica value="Helvetica Regular" />
+                <helvetica_oblique value="Helvetica Oblique" />
+                <helvetica_bold value="Helvetica Bold" />
+                <helvetica_bold_oblique value="Helvetica Bold Oblique" />
+                <times value="Times Regular" />
+                <times_italic value="Times Italic" />
+                <times_bold value="Times Bold" />
+                <times_bold_italic value="Times Bold Italic" />
+                <Symbol />
+                <zapf_dingbats value="Zapf Dingbats" />
+            </fonts>
+        </pdf>
+    </global>
+</config>
