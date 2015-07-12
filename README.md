@@ -5,7 +5,7 @@ A wkhtmltopdf adapter module for Magento.
 ## Objective
 
 To replace the Zend_Pdf "suite" of tools for generating sales-related PDF
-document in Magento. Also, to provide a very convenient method for quickly
+documents in Magento. Also, to provide a very convenient method for quickly
 generating PDF documents from HTML.
 
 ## Installation
