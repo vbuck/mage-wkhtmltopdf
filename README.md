@@ -37,7 +37,7 @@ To render directly to PDF content:
 /* @var $adapter Vbuck_Wkhtmltopdf_Model_Adapter */
 $adapter = Mage::getModel('pdf/adapter');
 $adapter->setContent('<h1>#realmagento</h1>')
-    ->render;
+    ->render();
 
 $pdfContent = $adapter->getOutput();
 ```
